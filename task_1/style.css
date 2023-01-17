@@ -1,0 +1,17 @@
+p {
+    color: orange;
+}
+
+/* #intro {
+    color: blue;
+    text-align: center;
+} */
+
+.summary {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+body {
+    background-color: green;
+}
