@@ -5,13 +5,14 @@ function random() {
     const sum=a+b+c;
     const mult=a*b*c;
     if (a >= 0&& b>=0 && c >= 0){
-        console.log(sum, mult);
+        console.log('sum', sum, 'mult', mult);
     }
     else if (a <0&& b<0 && c < 0){
         console.log("only negatives");
     }
     else {
-        console.log(sum);
+        console.log('sum', sum);
     }
 }
 random();
+
