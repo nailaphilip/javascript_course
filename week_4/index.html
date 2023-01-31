@@ -21,12 +21,29 @@
         <label for="money">Money</label>
         <input id="money" type="number" name="" id="money">
     </div>
-    <div> 
-        <button onclick="myFunction()">Calculator</button>
-    </div>
-    </form>
+</form>
+
+    <button onclick="calcGasoline()">Calculate</button>
 
 <p id="answer"></p>
+
+<h2>Temperature Converter</h2>
+
+<form>
+    <div class="form_group">
+    <label for="cel">Celsius</label>
+    <input onchange="Converter(this.id, this.value)" type="number" id="cel">
+</div>
+<div class="form_group">
+    <label for="far">Fahrenheit</label>
+    <input onchange="Converter(this.id, this.value)" type="number" id="far">
+</div>
+<div class="form_group">
+    <label for="kel">Kelvin</label>
+    <input onchange="Converter(this.id, this.value)" type="number" id="kel"/>
+</div>
+</form>
+
 <script src="main.js"></script>
 </body>
 </html>
