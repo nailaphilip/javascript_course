@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizza order group</title>
+</head>
+<body>
+    <form>
+        <h2>Please fill the form</h2>
+        <div>
+            <fieldset>
+                <label for="name">Enter your name</label>
+                <input type="text" name="ffd" id="nameCustomer">
+                <div>
+                    <h3>Choose the size</h3>
+                </div>
+                <div>
+                    <label for="2">For 2, 7,50€</label>
+                    <input type="radio" name="size" id="2" value="2">
+                </div>
+                <div>
+                    <label for="4">For 4, 10,50€</label>
+                    <input type="radio" name="size" id="4" value="4">
+                </div>
+                <div>
+                    <label for="6">For 6, 12,50€</label>
+                    <input type="radio" name="size" id="6" value="6">
+                </div>
+                <div>
+                    <label for="8">For 8, 15,50€</label>
+                    <input type="radio" name="size" id="8" value="8">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label for="ham">Ham</label>
+                    <input type="checkbox" name="gddg" id="ham">
+                </div>
+                <div>
+                    <label for="pepperoni">Pepperoni</label>
+                    <input type="checkbox" name="ert" id="pepperoni">
+                </div>
+                <div>
+                    <label for="mushrooms">Mushrooms</label>
+                    <input type="checkbox" name="433" id="mushrooms">
+                </div>
+                <div>
+                    <label for="pineapples">Pineapple</label>
+                    <input type="checkbox" name="rgy" id="pineapple">
+                </div>
+                <div>
+                    <label for="extracheese">Extra cheese</label>
+                    <input type="checkbox" name="dfgh" id="extracheese">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label for="delivery">Choose the delivery</label>
+                    <select name="" id="delivery">
+                        <option value="home">Delivery home+5€</option>
+                        <option value="eatIn">Eat in</option>
+                        <option value="pickUp">Pick up</option>
+                    </select>
+                </div>
+            </fieldset>
+        </div>
+    </form>
+    <div class="finalOrder">
+        <h2>
+            Final order
+        </h2>
+        <div>
+            <p id="namePrint"></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

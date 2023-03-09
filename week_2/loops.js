@@ -64,36 +64,55 @@ let even_count=0;
 
  }
 
- let even =0;
+//  let even =0;
 
- for(let b=0; b<5; b++) {
-    let input = Number(prompt('Enter a number'));
+//  for(let b=0; b<5; b++) {
+//     let input = Number(prompt('Enter a number'));
 
-    if (input%2==0) {
-        even++;
-    }
- }
+//     if (input%2==0) {
+//         even++;
+//     }
+//  }
 
- console.log('There was', even, 'even numbers');
+//  console.log('There was', even, 'even numbers');
 
 
 //  Make a program that asks numbers from the user, until user gives 0 and then program ends. In the end program prints out average of the numbers.
 
-let i;
-let sum=0;
-let counter=0;
+// let i;
+// let sum=0;
+// let counter=0;
 
-while (i!=0) {
-    i=Number(prompt("Enter your number"));
-    if(i==0) {
-        console.log('number is 0 - game over.');
+// while (i!=0) {
+//     i=Number(prompt("Enter your number"));
+//     if(i==0) {
+//         console.log('number is 0 - game over.');
+//         break;
+//     }    
+//     sum=sum+i;
+//     counter=counter+1;
+//     average=sum/counter;
+//     console.log('sum is', sum, 'average is', average);
+// }
+
+let input;
+let sum = 0;
+let count = 0;
+
+while (input !=0) {
+    input = Number(prompt('enter a number'));
+    if (input==0){
+        console.log('0 input');
         break;
-    }    
-    sum=sum+i;
-    counter=counter+1;
-    average=sum/counter;
-    console.log('sum is', sum, 'average is', average);
+    }
+    sum+= input;
+    count++
 }
+
+let average = sum/count;
+console.log(sum);
+console.log(count);
+console.log(average);
 
 // Make a program that asks 25 numbers form the user. In the end program prints out average of the numbers.
 
@@ -138,4 +157,14 @@ while (user_response!='n'){
 
 let n_numbers=Number(prompt('How many numbers do you want to give?'));
 let numbers=Number(prompt('Please give your numbers'));
+let smallest=0;
+
+for(let b=0; b<=n_numbers; b++) {
+    if (b < b) {
+        smallest = b;
+    }
+
+    
+ }
+
 console.log('The smallest number you gave is', smallest)

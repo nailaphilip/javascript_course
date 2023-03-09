@@ -1,32 +1,52 @@
-const Pizza = (e) => {
-    e.preventDefault();
+const form = document.querySelector('form');
+// all inputs
+const customer = document.querySelector('#name');
+const size = document.querySelectorAll('[name="size]');
+const toppings = document.querySelector('input[type="checkbox"]');
 
-    const user_name = document.querySelector('#name').value;
 
-    const size = document.querySelector('#size').value;
+const order_name = document.querySelector('order_name');
+const order_size = document.querySelector('order_size');
+const order_price = document.querySelector('#order_price');
+
+
+const myFunction = () => {
+    let customerName = customer.value;
+    let sizeResult = '';
+    let toppingsResults = [];
+    let price = 0;
+    let deliveryResult = delivery.options[delivery.selectedIndex];
+
+    size.forEach((item) => {
+        if(item.checked) {
+            sizeResult =item.value;
+            sizeText= `pizza for ${sizeResult};
+        }
+    });
+
+    switch (sizeResult) {
+        case'two':
+            price+= 7.5;
+            order_size.textContent = sizeText;
+        case'four':
+            price+= 10.5;
+            order_size.textContent = sizeText;
+        case'six':
+            price+= 12.5;
+            order_size.textContent = sizeText;
+        case'eight':
+            price += 15.5;
+            order_size.textContent = sizeText;
+    };
     
-    const topping = document.querySelector('#topping').value;
+    toppings.forEach ((item)=> {
+        if(item.checked) {
+            toppingsResult.push(item.value);
+        }
+    });
+    
+    
+    order_name.textContent = customerName;
+}
 
-    const answer = document.querySelector('#answer');
-
-    let text;
-
-    // or const money = Number(document.querySelector('#money').value);
-
-    // let text;
-
-    // const amount = Math.floor(money/price);
-
-    // if (amount>=10) {
-    //     text=`You could get about ${amount} liters, good now you can go`;
-    // }
-    // else {
-    //     text= `You could get about ${amount} liters. Sorry you have to stay`;
-    // }
-
-    // answer.textContent =text;
-    text=`Your name is $user_name`;
-    answer.textContent = text;
-    console.log(user_name);
-};
-
+form.addEventListener('input', myFunction);
